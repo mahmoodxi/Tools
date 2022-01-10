@@ -19,7 +19,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/root/portfwd """+str(iplocal)+""":"""+str(portlocal)+""" """+str(ip)+""":"""+str(port)+"""
+ExecStart=/root/tcpfwd """+str(iplocal)+""":"""+str(portlocal)+""" """+str(ip)+""":"""+str(port)+"""
 Restart=on-failure
 
 [Install]
